@@ -11,6 +11,8 @@ from pytube import YouTube
 import torch
 from pydub import AudioSegment
 import nltk
+nltk.download('punkt_tab')
+nltk.download('stopwords')
 import re
 from collections import Counter
 from nltk.corpus import stopwords
