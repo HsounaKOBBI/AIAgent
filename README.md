@@ -12,6 +12,31 @@ This project is a web application that extracts audio from videos, transcribes s
 - Detect speaker’s accent using SpeechBrain pretrained model
 - Summarize transcription with Hugging Face transformers (T5-small)
 - Provide transcription stats: word count, speaking speed, keywords, and frequent words
+
+## Supported Accents for Accent Detection
+
+The system currently supports the following English accents:
+
+| Code          | Accent / Region               |
+| ------------- | ---------------------------- |
+| **us**        | American (English - USA)      |
+| **england**   | British (English - England)   |
+| **australia** | Australian (English - Australia) |
+| **canada**    | Canadian (English - Canada)   |
+| **india**     | Indian (English - India)      |
+| **ireland**   | Irish (English - Ireland)     |
+| **scotland**  | Scottish (English - Scotland) |
+| **wales**     | Welsh (English - Wales)       |
+| **bermuda**   | Bermudian (English - Bermuda) |
+| **hongkong**  | Hong Kong English             |
+| **malaysia**  | Malaysian English             |
+| **newzealand**| New Zealander (English - NZ)  |
+| **philippines**| Filipino English             |
+| **singapore** | Singaporean English           |
+| **southatlantic** | South Atlantic English     |
+
+> **Note:** These accents are based on the classification model trained primarily on English accents. For other languages or accents, additional models or training may be required.
+
 ## 📦 Installation & 🚀 Launch
 1. Clone the repository:
 ```bash
