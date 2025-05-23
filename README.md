@@ -54,3 +54,12 @@ The system currently supports the following English accents:
 ## ☁️ Hosting & Demo
 The app is hosted on Microsoft Azure.
 Try the live demo here: http://52.170.134.226:8502/
+
+## How it Works
+1. User uploads a video file or inputs a video URL.
+2. The app extracts the audio track from the video.
+3. Optionally applies noise reduction to improve transcription accuracy.
+4. Uses Faster Whisper to transcribe audio to text.
+5. Runs an accent classification model to detect the speaker’s accent.
+6. Generates a brief summary of the transcription.
+7. Shows detailed statistics about the transcription including speaking speed and keywords.
