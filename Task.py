@@ -7,7 +7,7 @@ from faster_whisper import WhisperModel
 import time
 from speechbrain.inference import EncoderClassifier
 from transformers import pipeline
-from pytube import YouTube
+from pytubefix import YouTube
 import torch
 from pydub import AudioSegment
 import nltk
