@@ -1,4 +1,4 @@
-# AIAgent
+# AIAgent English Accent Detection Tool
 # Video Transcription & Accent Analysis App
 
 This project is a web application that extracts audio from videos, transcribes speech using Whisper, detects the speaker’s accent with SpeechBrain, applies noise reduction, and generates a summary of the transcription. The app is built with Streamlit for an easy-to-use interface.
