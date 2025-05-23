@@ -3,15 +3,14 @@
 
 This project is a web application that extracts audio from videos, transcribes speech using Whisper, detects the speaker’s accent with SpeechBrain, applies noise reduction, and generates a summary of the transcription. The app is built with Streamlit for an easy-to-use interface.
 
-## Features
-
-- Upload or download videos from URL (including YouTube)
-- Extract audio track from video using FFmpeg
-- Optional noise reduction on audio
-- Transcribe speech to text with Whisper (faster_whisper)
-- Detect speaker’s accent using SpeechBrain pretrained model
-- Summarize transcription with Hugging Face transformers (T5-small)
-- Provide transcription stats: word count, speaking speed, keywords, and frequent words
+## Technical Details
+- Audio extraction: FFmpeg converts video to WAV format.
+- Transcription: Uses Faster Whisper (base model) for reliable speech-to-text.
+- Accent classification: SpeechBrain’s pretrained ECAPA-TDNN model for accent detection.
+- Summary: Hugging Face’s T5-small model for text summarization.
+- Noise Reduction: Optional, using noisereduce to improve audio clarity.
+- UI: Built with Streamlit for a lightweight, interactive web interface.
+- Hosting: Deployed on Azure VM with port 8502 exposed.
 
 ## Supported Accents for Accent Detection
 
