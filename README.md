@@ -12,7 +12,7 @@ This project is a web application that extracts audio from videos, transcribes s
 - Detect speaker’s accent using SpeechBrain pretrained model
 - Summarize transcription with Hugging Face transformers (T5-small)
 - Provide transcription stats: word count, speaking speed, keywords, and frequent words
-## Installation
+## 📦 Installation & 🚀 Launch
 1. Clone the repository:
 ```bash
     git clone https://github.com/HsounaKOBBI/AIAgent.git
@@ -22,3 +22,10 @@ This project is a web application that extracts audio from videos, transcribes s
 ```bash
     pip install -r requirements.txt
 ```
+3. Launch the Streamlit app:
+```bash
+    streamlit run Task.py --server.port 8502 --server.enableCORS false --server.address 0.0.0.0
+```
+## ☁️ Hosting & Demo
+The app is hosted on Microsoft Azure.
+Try the live demo here: http://52.170.134.226:8502/
