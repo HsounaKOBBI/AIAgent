@@ -169,7 +169,7 @@ elif video_source == "🔗 Video URL (.mp4)":
     if url:
         try:
             if "youtu.be" in url:
-                yt = YouTube(url)
+                yt = YouTube(url,use_po_token=True)
                 stream = yt.streams.filter(progressive=True, file_extension='mp4').order_by('resolution').desc().first()
                 with tempfile.NamedTemporaryFile(delete=False, suffix=".mp4") as tmp:
                     stream.download(output_path=os.path.dirname(tmp.name), filename=os.path.basename(tmp.name))
