@@ -17,8 +17,8 @@ This project is a web application that extracts audio from videos, transcribes s
 ```bash
     git clone https://github.com/HsounaKOBBI/AIAgent.git
     cd AIAgent
-    ```
+```
 2. Install required Python packages:
 ```bash
     pip install -r requirements.txt
-    ```
+```
