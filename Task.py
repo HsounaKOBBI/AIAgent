@@ -28,7 +28,8 @@ model = WhisperModel("base", device="cpu", compute_type="int8")
 
 # Load the accent classifier and summarizer
 classifier = EncoderClassifier.from_hparams(
-    source="pretrained_models/accent-id-commonaccent_ecapa",
+    source="Jzuluaga/accent-id-commonaccent_ecapa",
+    savedir="pretrained_models/accent-id-commonaccent_ecapa"
 )
 summarizer = pipeline("summarization", model="t5-small")
 
